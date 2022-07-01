@@ -1,4 +1,4 @@
-# Database MySQL dasar hingga advanced
+# Database MySQL Dasar hingga Advanced
 ## Materi yang dibahas dalam repository ini meliputi :
 ### DDL (Data Definition Language)
 - Create Table
