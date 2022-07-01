@@ -15,7 +15,11 @@
 ### Advanced Query
 - Foreign Key
 - Join Table
-### Procedure, Function dan Trigger
+- Advanced select query
+### Prosedur database
+- Procedure
+- Function
+- Trigger
 ### DCL (Data Control Language)
 - Grant
 - Revoke
@@ -23,3 +27,6 @@
 - Commit
 - Rollback
 - Set Transaction
+### Project database
+- Koneksi database MySQL ke Python
+- Project CRUD sederhana
