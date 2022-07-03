@@ -1,3 +1,4 @@
+#import library 
 import mysql.connector as sql
 
 # Akses ke database mysql server
@@ -5,7 +6,7 @@ database = sql.connect(
     host='localhost',
     user='root',
     password='',
-    database='bank'
+    db_name='db_bank'
 )
 
 # Insert data ke database (Create)
@@ -32,7 +33,7 @@ data = (548641,)
 delete.execute(delData, data)
 database.commit()
 
-# Membaca data (READ)
+# Read data (READ)
 read = database.cursor()
 read.execute('select * from nasabah')
 
