@@ -1,7 +1,7 @@
 #import library 
 import mysql.connector as sql
 
-# Akses ke database mysql server
+# Access a database at mysql server
 database = sql.connect(
     host='localhost',
     user='root',
@@ -9,7 +9,7 @@ database = sql.connect(
     db_name='db_bank'
 )
 
-# Insert data ke database (Create)
+# Insert data (Create)
 insert = database.cursor()
 dataInsert = 'insert into nasabah(norek, nama, jenisKelamin, alamat, noTelp, saldo) VALUES (%s, %s, %s, %s, %s, %s)'
 values = (124876, 'Julie', 'P', 'Bogor', '0812154', 456800)
@@ -17,7 +17,7 @@ values = (124876, 'Julie', 'P', 'Bogor', '0812154', 456800)
 insert.execute(dataInsert, values)
 database.commit()
 
-# Update data di database (Update)
+# Update data (Update)
 update = database.cursor()
 dataUpdate = 'update nasabah set alamat=%s where norek = %s'
 data = ('Depok', 125486)
@@ -25,7 +25,7 @@ data = ('Depok', 125486)
 update.execute(dataUpdate, data)
 database.commit()
 
-# Delete data di database (Delete)
+# Delete data (Delete)
 delete = database.cursor()
 delData = 'delete from nasabah where norek=%s'
 data = (548641,)
